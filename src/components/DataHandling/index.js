@@ -12,7 +12,7 @@ const DataHandling = () => {
     const teamValue = params.get('team');
 
     if (teamValue) {
-      axios.get(`http://localhost:8080/api/v1/player?team=${encodeURIComponent(teamValue)}`)
+      axios.get(`league-backend-production-0d9d.up.railway.app/api/v1/player?team=${encodeURIComponent(teamValue)}`)
         .then(response => {
           console.log("Data fetched: ", response.data);
           setPlayerData(response.data); // Store data in the state
