@@ -19,7 +19,7 @@ function App() {
 
     // Function to generate fetch URL based on query params
     const generateFetchUrl = () => {
-      let baseUrl = 'league-backend-production-0d9d.up.railway.app'; // Backend API base URL
+      let baseUrl = 'league-backend-production-0d9d.up.railway.app/api/v1/player'; // Backend API base URL
       const queryParams = new URLSearchParams(location.search); // Get query params from URL
 
       // Dynamically construct the URL based on query params
