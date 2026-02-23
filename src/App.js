@@ -10,8 +10,8 @@ import Position from './components/Position';
 import Search from './components/Search';
 
 function App() {
-  //const [players, setPlayers] = useState([]);  // State to store players data
-  //const [loading, setLoading] = useState(true);  // Loading state
+  const [, setPlayers] = useState([]);  // State to store players data
+  const [, setLoading] = useState(true);  // Loading state
   const location = useLocation();  // To get the current URL and query parameters
 
   useEffect(() => {
